@@ -1,2 +1,3 @@
 docxtpl
 PyYAML
+docx2pdf

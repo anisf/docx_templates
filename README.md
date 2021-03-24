@@ -15,6 +15,12 @@ python gen_docs.py <operation>
 # Exemple for liquidation :
 python gen_docs.py liquidation
 ```
+
+Convert generated docs to pdf from output/\*\*/*.docx
+
+```bash
+python convert2pdf.py
+```
 # Requirements
 Python 3.7 + Python PIP
 
