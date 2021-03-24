@@ -1,5 +1,4 @@
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![anisf.docx_templates.simple_run](https://github.com/anisf/docx_templates/actions/workflows/simple_run.yml/badge.svg)](https://github.com/anisf/docx_templates/actions/workflows/simple_run.yml)
 # docx_templates
 A set of docx templates to be used with python
 
