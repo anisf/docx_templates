@@ -4,11 +4,17 @@ Created : 24/03/2021
 @author: Anis FATHALLAH
 '''
 
-from docxtpl import DocxTemplate
+from docxtpl import DocxTemplate, InlineImage
+from docx.shared import Mm
 from yaml import safe_load
 from pathlib import PurePath, Path
 from argparse import ArgumentParser
 from sys import exit
+
+def add_signatures(tpl, company):
+  for i, sh in enumerate(company['shareholders']):
+    company['shareholders'][i]['sign'] = InlineImage(tpl, sh['signature'], height=Mm(20))
+  return company
 
 template_base_dir = Path('templates')
 operations = [child.name for child in template_base_dir.iterdir()]
@@ -39,7 +45,8 @@ with open(PurePath(input_dir, 'companies.yml'), 'r') as file:
       print('{0}: {1}...'.format(company['company_name'], template.name ))
 
       tpl = DocxTemplate(template)
-      tpl.render(company)
+      tpl_context = add_signatures(tpl, company)
+      tpl.render(tpl_context)
 
       tpl.save(PurePath(output_dir, template.name ))
 
