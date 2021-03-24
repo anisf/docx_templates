@@ -8,7 +8,7 @@ This project has been initiated to simplify paperasse
 It uses input/companies.yml as input variables and templates/<operation>/*.docx as templates file
 
 # Usage
-Generate docs from templates/<operation>/*.docx
+Generate docs from templates/\<operation\>/*.docx
 
 ```bash
 python gen_docs.py <operation>
