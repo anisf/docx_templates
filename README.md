@@ -14,12 +14,17 @@ python gen_docs.py <operation>
 # Exemple for liquidation :
 python gen_docs.py liquidation
 ```
+# Requirements
+Python 3.7 + Python PIP
 
+```bash
+pip install -r requirements.txt
+```
 # Configuration
 Set variables in input/companies.yml
 
 # Limitations
-See templates/<operation>/README.md for limitations
+See templates/\<operation\>/README.md for limitations
   
 # Disclaimer
 None of the contributors can be held responsible for any usage made from this project
