@@ -16,7 +16,7 @@ python gen_docs.py <operation>
 python gen_docs.py liquidation
 ```
 
-Convert generated docs to pdf from output/\*\*/*.docx
+Convert generated docs to pdf from output/\*\*/*.docx (NEEDS MICROSOFT WORD INSTALLED)
 
 ```bash
 python convert2pdf.py
