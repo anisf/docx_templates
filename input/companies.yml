@@ -1,0 +1,86 @@
+companies:
+- company_name: TIME IS SAS
+  share_capital: 100€
+  siren: 123456789
+  head_office:
+    siret: 12345678912345
+    street_number: 123
+    street_name: Rue de la pie qui boit
+    zip_code: 35400
+    city: SAINT-MALO
+    country: FRANCE
+    rcs: SAINT-MALO
+
+  dissolution_date: 23/03/2021
+  liquidation_date: 24/03/2021
+
+  shareholders:
+  - type: person
+    first_name: Pierre
+    middle_name: Paul
+    last_name: JACK
+    date_of_birth: 01/02/1903
+    place_of_birth: Mouais (Loire-Atlantique)
+    street_number: 42
+    street_name: Rue Pavée d'Andouilles
+    zip_code: 71460
+    city: Saint-Gengoux-le-national
+    country: FRANCE
+
+  - type: company
+    company_name: TIME IS LIMITED
+    company_number: 03536346
+    representative:
+      first_name: Pierre
+      middle_name: Paul
+      last_name: JACK
+      date_of_birth: 01/02/1903
+      place_of_birth: Mouais (Loire-Atlantique)
+      street_number: 42
+      street_name: Rue Pavée d'Andouilles
+      zip_code: 71460
+      city: Saint-Gengoux-le-national
+      country: FRANCE
+
+- company_name: COMPANY 2 SAS
+  share_capital: 100€
+  siren: 987654321
+  head_office:
+    siret: 98765432112345
+    street_number: 378
+    street_name: Avenue des Champs-Elysées
+    zip_code: 58170
+    city: POIL
+    country: FRANCE
+    rcs: NEVERS
+
+  dissolution_date: 23/03/2021
+  liquidation_date: 24/03/2021
+
+  shareholders:
+  - type: person
+    first_name: Pierre
+    middle_name: Paul
+    last_name: JACK
+    date_of_birth: 01/02/1903
+    place_of_birth: Mouais (Loire-Atlantique)
+    street_number: 42
+    street_name: Rue Pavée d'Andouilles
+    zip_code: 71460
+    city: Saint-Gengoux-le-national
+    country: FRANCE
+
+  - type: company
+    company_name: TIME IS LIMITED
+    company_number: 03536346
+    representative:
+      first_name: Pierre
+      middle_name: Paul
+      last_name: JACK
+      date_of_birth: 01/02/1903
+      place_of_birth: Mouais (Loire-Atlantique)
+      street_number: 42
+      street_name: Rue Pavée d'Andouilles
+      zip_code: 71460
+      city: Saint-Gengoux-le-national
+      country: FRANCE
