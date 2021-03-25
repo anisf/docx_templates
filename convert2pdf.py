@@ -7,15 +7,19 @@ Created : 24/03/2021
 from pathlib import Path
 from docx2pdf import convert
 
-output_dir = Path('output')
-dirs_only = [x.parent for x in output_dir.glob('**/*.docx')]
+def main():
+  output_dir = Path('output')
+  dirs_only = [x.parent for x in output_dir.glob('**/*.docx')]
 
-for dir in set(dirs_only):
-  pdf_dir = Path(dir, 'pdf')
+  for dir in set(dirs_only):
+    pdf_dir = Path(dir, 'pdf')
 
-  if not pdf_dir.exists():
-    Path.mkdir(pdf_dir)
+    if not pdf_dir.exists():
+      Path.mkdir(pdf_dir)
 
-  print('Converting {}...'.format(dir))
-  convert(dir, pdf_dir)
-  print('...Done')
+    print('Converting {}...'.format(dir))
+    convert(dir, pdf_dir)
+    print('...Done')
+
+if __name__ == '__main__':
+  main()
