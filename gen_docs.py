@@ -60,6 +60,6 @@ def main(yaml, templates, operation):
 if __name__ == '__main__':
   possible_operations = get_operations(Path('templates'))
   args = get_args(possible_operations)
-  templates = get_templates(PurePath('templates', args.operation))
+  templates = get_templates(Path('templates', args.operation))
   yaml = load_yaml(PurePath('input', 'companies.yml'))
   main(yaml, templates, args.operation)
